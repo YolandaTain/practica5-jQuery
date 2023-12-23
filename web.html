@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VinylRecord</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/web.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/web.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <!-- Slick Carousel CSS y JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </head>
+
 <body>
-    <h1>hola</h1>
+    <header id="cabecera" class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center header-container logocentro">
+            <div class="row">
+                <div class="col-1 circulo d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="/img/logo.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="col text-start dropdown">
+                <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="navbar-brand" href="#">
+                        <img src="/img/search.png" alt="Logo" class="search">
+                    </a>
+                </button>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 dropdown-menu">
+                        <div class="row agrupar">
+                            <div class="col-8 input-group">
+                                <!-- Campo de búsqueda -->
+                                <input type="search" class="search-box" placeholder="Introduce un artista o album..."
+                                    id="searchInput">
+                                <!-- Botón de búsqueda -->
+                                <button type="button" class="btn btn-dark search-button">Buscar</button>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-md-between align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tienda">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#ofertas">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav w-100 d-flex justify-content-md-end align-items-center">
+                    <li class="nav-item fw-bolder ">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/registro.png" alt="registro" style="max-height: 100px;">
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bolder">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/login.png" alt="login" style="max-height: 100px;">
+                        </a>
+                    </li>
+                    <div class="dropdown">
+                        <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="navbar-brand" href="#">
+                                <img src="/img/carrito.png" alt="Logo" id="search">
+                            </a>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="carrito"></ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br><br>
+    <div class="ofertas">
+        <p id="cuenta-regresiva"></p>
+    </div>
+
+    <div id="tarjetas" class="row justify-content-center">
+        <!-- Aquí se mostrarán las tarjetas y los resultados de búsqueda -->
+    </div>
+
+    <div class="recomendados row">
+        <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
+            <h1>Discos Recomendados</h1>
+            <img src="/img/star.png" alt="Logo">
+            <img src="/img/star.png" alt="Logo">
+            <img src="/img/star.png" alt="Logo">
+        </div>
+        <br><br><br><br>
+
+        <div id="cards-container" class="container mt-4"></div>
+
+
+        <div class="row" id="tienda">
+            <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
+                <h1>Store</h1>
+            </div>
+            <div class="seccionTienda">
+                <div id="filtro">
+                    <label for="categoria">Filtrar por categoría:</label>
+                    <select id="categoria">
+                        <option value="todas">Selecciona categoría...</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Reggae">Reggae</option>
+                        <option value="Hip-Hop">Hip-Hop</option>
+                    </select>
+                </div>
+
+                <div id="resultadosFiltro">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="ofertas">
+            <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
+                <h1>Ofertas</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-6 align-self-center">
+                    <div id="slick-carousel" class="slick-carousel-container">
+                        <!-- Contenedor dinámico para las tarjetas del carrusel -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="novedades">
+            <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
+                <h1>Novedades</h1>
+            </div>
+        </div>
+        <footer id="footer" class="row justify-content-center">
+            <div class="col-1 col-md-1 col-lg-1 align-self-center">
+                <svg fill="#FFFDF4" height="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.467 367.467" xml:space="preserve">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path
+                                d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z">
+                            </path>
+                            <path
+                                d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 align-self-center">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+
 </body>
+
 </html>

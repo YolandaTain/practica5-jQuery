@@ -1,0 +1,184 @@
+{
+    "vinilos": [
+        {
+            "id": 1,
+            "imagen": "/img/vinilos/vinilo1.jpg",
+            "artista": "The Beatles",
+            "album": "Abbey Road",
+            "categoria": "Rock",
+            "subcategoria": "tienda",
+            "precio": 30.99
+          },
+          {
+            "id": 2,
+            "imagen": "/img/vinilos/vinilo2.png",
+            "artista": "Miles Davis",
+            "album": "Kind of Blue",
+            "categoria": "Jazz",
+            "subcategoria": "oferta",
+            "precio": 25.50
+          },
+          {
+            "id": 3,
+            "imagen": "/img/vinilos/vinilo3.jpg",
+            "artista": "Michael Jackson",
+            "album": "Thriller",
+            "categoria": "Pop",
+            "subcategoria": "novedades",
+            "precio": 40.75
+          },
+          {
+            "id": 4,
+            "imagen": "/img/vinilos/vinilo4.jpg",
+            "artista": "Bob Marley",
+            "album": "Legend",
+            "categoria": "Reggae",
+            "subcategoria": "tienda",
+            "precio": 22.99
+          },
+          {
+            "id": 5,
+            "imagen": "/img/vinilos/vinilo5.jpg",
+            "artista": "John Coltrane",
+            "album": "A Love Supreme",
+            "categoria": "Jazz",
+            "subcategoria": "novedades",
+            "precio": 28.75
+          },
+          {
+            "id": 6,
+            "imagen": "/img/vinilos/vinilo6.jpg",
+            "artista": "Pink Floyd",
+            "album": "The Dark Side of the Moon",
+            "categoria": "Rock",
+            "subcategoria": "oferta",
+            "precio": 35.50
+          },
+          {
+            "id": 7,
+            "imagen": "/img/vinilos/vinilo7.jpg",
+            "artista": "Queen",
+            "album": "A Night at the Opera",
+            "categoria": "Rock",
+            "subcategoria": "oferta",
+            "precio": 32.20
+          },
+          {
+            "id": 8,
+            "imagen": "/img/vinilos/vinilo8.jpg",
+            "artista": "Elvis Presley",
+            "album": "Elvis Presley",
+            "categoria": "Rock 'n' Roll",
+            "subcategoria": "tienda",
+            "precio": 18.99
+          },
+          {
+            "id": 9,
+            "imagen": "/img/vinilos/vinilo9.jpg",
+            "artista": "Beyoncé",
+            "album": "Lemonade",
+            "categoria": "R&B",
+            "subcategoria": "oferta",
+            "precio": 45.30
+          },
+          {
+            "id": 10,
+            "imagen": "/img/vinilos/vinilo10.jpg",
+            "artista": "David Bowie",
+            "album": "The Rise and Fall of Ziggy Stardust",
+            "categoria": "Rock",
+            "subcategoria": "novedades",
+            "precio": 29.80
+          },
+          {
+            "id": 11,
+            "imagen": "/img/vinilos/vinilo11.jpg",
+            "artista": "Frank Sinatra",
+            "album": "Songs for Swingin' Lovers!",
+            "categoria": "Swing",
+            "subcategoria": "tienda",
+            "precio": 24.60
+          },
+          {
+            "id": 12,
+            "imagen": "/img/vinilos/vinilo12.jpg",
+            "artista": "AC/DC",
+            "album": "Back in Black",
+            "categoria": "Rock",
+            "subcategoria": "novedades",
+            "precio": 33.75
+          },
+          {
+            "id": 13,
+            "imagen": "/img/vinilos/vinilo13.jpg",
+            "artista": "Nina Simone",
+            "album": "I Put a Spell on You",
+            "categoria": "Jazz",
+            "subcategoria": "tienda",
+            "precio": 26.40
+          },
+          {
+            "id": 14,
+            "imagen": "/img/vinilos/vinilo14.jpg",
+            "artista": "U2",
+            "album": "The Joshua Tree",
+            "categoria": "Rock",
+            "subcategoria": "oferta",
+            "precio": 31.90
+          },
+          {
+            "id": 15,
+            "imagen": "/img/vinilos/vinilo15.jpg",
+            "artista": "Prince",
+            "album": "Purple Rain",
+            "categoria": "Funk",
+            "subcategoria": "novedades",
+            "precio": 38.25
+          },
+          {
+            "id": 16,
+            "imagen": "/img/vinilos/vinilo16.jpg",
+            "artista": "The Rolling Stones",
+            "album": "Exile on Main St.",
+            "categoria": "Rock",
+            "subcategoria": "oferta",
+            "precio": 36.20
+          },
+          {
+            "id": 17,
+            "imagen": "/img/vinilos/vinilo17.jpg",
+            "artista": "Taylor Swift",
+            "album": "1989",
+            "categoria": "Pop",
+            "subcategoria": "tienda",
+            "precio": 29.99
+          },
+          {
+            "id": 18,
+            "imagen": "/img/vinilos/vinilo18.jpg",
+            "artista": "Coldplay",
+            "album": "A Head Full Of Dreams",
+            "categoria": "Pop",
+            "subcategoria": "novedades",
+            "precio": 34.50
+          },
+          {
+            "id": 19,
+            "imagen": "/img/vinilos/vinilo19.jpg",
+            "artista": "Kendrick Lamar",
+            "album": "To Pimp a Butterfly",
+            "categoria": "Hip-Hop",
+            "subcategoria": "destacado",
+            "precio": 29.99
+          },
+          {
+            "id": 20,
+            "imagen": "/img/vinilos/vinilo20.jpg",
+            "artista": "Ella Fitzgerald",
+            "album": "Ella Swings Brightly with Nelson",
+            "categoria": "Jazz",
+            "subcategoria": "novedades",
+            "precio": 29.10
+          }
+    ]
+}

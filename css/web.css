@@ -1,0 +1,289 @@
+:root {
+    --body: #FFFDF4;
+    --claro: #ffffff;
+    --menu: #f57e53;
+    --oscuro: #344306;
+    --fondo: #000000;
+    --album: #5d5d5d;
+    --botonHover: #1C2206;
+    --textomenosimportante: #818181;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Black Ops One';
+    background-color: var(--fondo);
+    font-size: 16px;
+}
+
+#cabecera {
+    background-image: url("/img/cabecera.webp");
+    width: auto;
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.circulo {
+    width: 30rem;
+    height: 30rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logocentro {
+    margin-left: 65rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.nav-item {
+    font-size: 2rem;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+#search {
+    margin-left: 0.2rem;
+}
+
+.nav-link {
+    color: white;
+}
+
+#dropdownMenuButton {
+    background-color: black;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.recomendados {
+    background-color: #000000;
+    margin: 0;
+    color: white;
+}
+
+.rotulo1 h1 {
+    font-size: 3.5rem;
+}
+
+h1 {
+    color: white;
+    padding: 2rem;
+}
+
+.rotulo {
+    background-image: url(/img/text.avif);
+}
+
+.rotulo h1 {
+    color: var(--fondo);
+    font-size: 5rem;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.rotulo1 img {
+    width: 2rem;
+}
+
+.carousel-control-prev {
+    margin-left: -10rem;
+}
+
+.carousel-control-next {
+    margin-right: -10rem;
+}
+
+.carousel-inner {
+    justify-content: center;
+}
+
+#filtro {
+    margin-bottom: 20px;
+}
+
+#resultados {
+    border: 1px solid #df1f1f;
+    padding: 10px;
+
+}
+
+.seccionTienda {
+    background-color: black;
+}
+
+#resultados li {
+    color: var(--menu);
+}
+
+li {
+    color: var(--menu);
+}
+
+label {
+    color: var(--menu);
+}
+
+.rotulo2 img {
+    width: 2rem;
+}
+
+.rotulo2 {
+    background-image: url("/img/minijack.webp");
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    color: black;
+}
+
+.ofertas p {
+    background-image: url("/img/minijack.webp");
+    color: black;
+    text-align: center;
+}
+
+.card {
+    width: 18rem;
+    /* Ajusta el ancho de la tarjeta según tus necesidades */
+    margin-bottom: 20px;
+    /* Espaciado entre las tarjetas */
+}
+
+.vinilo-card {
+    width: 40rem;
+    /* Ajusta el ancho de la tarjeta según tus necesidades */
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    background-color: black;
+    border-radius: 1rem;
+    margin: 5rem;
+    color:white;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 5px var(--menu);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.slick-carousel-container {
+    max-width: 90rem;
+    /* Ancho máximo del carrusel */
+}
+
+.search-box {
+    padding: 10px;
+    border: none;
+    width: 30rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 0.2rem;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.search-box:focus {
+    background-color: var(--menu);
+}
+
+.search-button {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    width: 10rem;
+    border: solid white;
+}
+
+.search-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-menu {
+    width: 41rem;
+    padding: 0;
+    background-color: #000000;
+
+}
+
+.añadir-carrito {
+    padding: '1rem';
+    width: '5rem';
+    font-size: '1rem';
+    background-color: #c9613b;
+    border-radius: '10px';
+    transition: 'background-color 0.3s ease';
+}
+
+
+#tarjetas{
+    color: white;
+}
+
+.resultados{
+    color: var(--menu)
+}
+
+.tarjeta{
+    width: 20rem;
+    margin-top: '2rem';
+    margin-left: 10rem;
+    background-color: white;
+    color: black;
+    font-size: '1rem';
+    border-radius: 1rem;
+}
+
+.tarjeta-img-top{
+    width: 20rem;
+}
+
+.tarjeta-text{
+    font-size: 1rem;
+}
+
+.tarjeta-album{
+    font-size: 1rem;
+    color: var(--menu)
+}
+
+.fila{
+    margin: 2rem;
+    margin-left: 2rem;
+}
+
+.tarjeta-body{
+    margin-top: 1.5rem;
+}
+
+
+
+
