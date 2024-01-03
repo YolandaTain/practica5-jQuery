@@ -24,97 +24,102 @@
 </head>
 
 <body>
-    <header id="cabecera" class="row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center header-container logocentro">
-            <div class="row">
-                <div class="col-1 circulo d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="/img/logo.png" alt="Logo" class="logo">
-                    </a>
+    <div class="container-fluid">
+        <header id="cabecera" class="row justify-content-center">
+            <div class="col-12 col-md-6 header-container logocentro">
+                <div class="row justify-content-center">
+                    <div class="col-12 circulo">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/logo.png" alt="Logo" class="logo col-12">
+                        </a>
+                    </div>
                 </div>
             </div>
+        </header>
+        <div class="row ofertas">
+            <p class="col-12" id="cuenta"></p>
         </div>
-    </header>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div class="col text-start dropdown">
-                <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <a class="navbar-brand" href="#">
-                        <img src="/img/search.png" alt="Logo" class="search">
-                    </a>
+
+        <nav class="row navbar navbar-expand-md navbar-expand-lg navbar-dark bg-dark" id="principal">
+            
+            <div class="col-1 col-md-1 col-lg-1">
+                <button id="home-button" type="button" aria-expanded="false">
+                    <span class="img-home">
+                        <img src="/img/casa.png" alt="home" width="53rem">
+                    </span>
                 </button>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 dropdown-menu">
-                        <div class="row agrupar">
-                            <div class="col-8 input-group">
-                                <!-- Campo de búsqueda -->
-                                <input type="search" class="search-box" placeholder="Introduce un artista o album..."
-                                    id="searchInput">
-                                <!-- Botón de búsqueda -->
-                                <button type="button" class="btn btn-dark search-button">Buscar</button>
-                             
-                            </div>
+            </div>
+            <ul class="col-12 col-md-7 col-lg-8 justify-content-around align-items-center navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="tienda-link" href="#">Store
+                        <img src="/img/icons8-dropdown-50.png" class="drop-vector">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="ofertas-link" href="#">Ofertas   
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="novedades-link" href="#">Novedades        
+                    </a>
+                </li>
+            </ul>
+
+            <div class="col-4 col-md-1 col-lg-1 dropdown-search text-start">
+                <!-- Botón de BUSCAR -->
+                <button id="dropdownMenuButton" class="search-nav btn btn-secondary dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="img-search">
+                        <img src="/img/search.png" alt="Logo" class="search">
+                    </span>
+                </button>
+                <!-- Desplegable de BUSCAR -->
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="buscador">
+                    <div class="row agrupar justify-content-center">
+                        <input type="search" class="col-7 search-box align-self-center"
+                            placeholder="Introduce un artista o álbum..." id="searchInput">
+                        <button type="button" class="col-5 btn btn-dark search-button">BUSCAR</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 resultados text-center mt-2">
+                            <!-- Aquí se mostrarán los resultados de búsqueda -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 d-flex justify-content-md-between align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tienda">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#ofertas">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
-                    </li>
+
+            <div class="col-4 col-md-1 col-lg-1 text-center">
+                <button id="user-button" type="button" aria-expanded="false">
+                    <span class="img-user">
+                        <img src="/img/usuario.png" alt="user">
+                    </span>
+                </button>
+            </div>
+            <div class="col-4 col-md-1 col-lg-1 dropdown-carrito text-end">
+                <button id="dropdownMenuButton" class="carrito-button btn btn-secondary dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                    <span class="img-carrito">
+                        <img src="/img/carrito.png" alt="Logo">
+                    </span>
+                </button>
+                <ul class="col-12 dropdown-menu text-end" aria-labelledby="dropdownMenuButton" id="carrito">
                 </ul>
-                <div class="navbar-nav w-100 d-flex justify-content-md-end align-items-center">
-                    <li class="nav-item fw-bolder ">
-                        <a class="navbar-brand" href="#">
-                            <img src="/img/registro.png" alt="registro" style="max-height: 100px;">
-                        </a>
-                    </li>
-                    <li class="nav-item fw-bolder">
-                        <a class="navbar-brand" href="#">
-                            <img src="/img/login.png" alt="login" style="max-height: 100px;">
-                        </a>
-                    </li>
-                    <div class="dropdown">
-                        <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <a class="navbar-brand" href="#">
-                                <img src="/img/carrito.png" alt="Logo" id="search">
-                            </a>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="carrito"></ul>
-                    </div>
-                </div>
             </div>
         </nav>
-    </div>
-    <br><br>
-    <div class="ofertas">
-        <p id="cuenta-regresiva"></p>
-    </div>
 
-    <div id="tarjetas" class="row justify-content-center">
-        <!-- Aquí se mostrarán las tarjetas y los resultados de búsqueda -->
-    </div>
+        <br><br>
 
-    <div class="recomendados row">
-        <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
-            <h1>Discos Recomendados</h1>
-            <img src="/img/star.png" alt="Logo">
-            <img src="/img/star.png" alt="Logo">
-            <img src="/img/star.png" alt="Logo">
+        <div class="recomendados row" id="recomendados">
+            <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
+                <h1>Discos Recomendados</h1>
+                <img src="/img/star.png" alt="Logo">
+                <img src="/img/star.png" alt="Logo">
+                <img src="/img/star.png" alt="Logo">
+            </div>
+            <br><br><br><br>
+
+            <div id="cards-container" class="container mt-4"></div>
         </div>
-        <br><br><br><br>
-
-        <div id="cards-container" class="container mt-4"></div>
-
 
         <div class="row" id="tienda">
             <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
@@ -142,45 +147,54 @@
             <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
                 <h1>Ofertas</h1>
             </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-6 align-self-center">
-                    <div id="slick-carousel" class="slick-carousel-container">
-                        <!-- Contenedor dinámico para las tarjetas del carrusel -->
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-6 align-self-center">
+                        <div id="slick-carousel" class="slick-carousel-container">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row" id="novedades">
-            <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
-                <h1>Novedades</h1>
+
+
+        <div class="recomendados row" id="novedades">
+            <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
+                <h1>NOVEDADES</h1>
+                <img src="/img/star.png" alt="Logo">
+                <img src="/img/star.png" alt="Logo">
+                <img src="/img/star.png" alt="Logo">
             </div>
+            <div id="novedades-container" class="container mt-4"></div>
         </div>
+
         <footer id="footer" class="row justify-content-center">
             <div class="col-1 col-md-1 col-lg-1 align-self-center">
-                <svg fill="#FFFDF4" height="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.467 367.467" xml:space="preserve">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <g>
-                            <path
-                                d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z">
-                            </path>
-                            <path
-                                d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z">
-                            </path>
-                        </g>
-                    </g>
-                </svg>
+
             </div>
             <div class="col-6 col-md-4 col-lg-2 align-self-center">
-                <p>Todos los derechos reservados</p>
+                <p>VinylRecord <svg fill="#FFFDF4" height="15px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 367.467 367.467" xml:space="preserve">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z">
+                                </path>
+                                <path
+                                    d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg> Todos los derechos reservados</p>
             </div>
         </footer>
-    </div>
 
+
+    </div>
 
 </body>
 

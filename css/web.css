@@ -1,7 +1,7 @@
 :root {
     --body: #FFFDF4;
     --claro: #ffffff;
-    --menu: #f57e53;
+    --menu: #f96530;
     --oscuro: #344306;
     --fondo: #000000;
     --album: #5d5d5d;
@@ -21,8 +21,6 @@ body {
 
 #cabecera {
     background-image: url("/img/cabecera.webp");
-    width: auto;
-    height: 30rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0%;
@@ -33,10 +31,12 @@ body {
     height: 30rem;
     background-color: white;
     border-radius: 50%;
+    padding: 0rem;
+    margin: 2rem;
 }
 
-.logocentro {
-    margin-left: 65rem;
+.logo {
+    margin-top: 2.5rem;
 }
 
 .container-fluid {
@@ -45,36 +45,137 @@ body {
 
 .nav-item {
     font-size: 2rem;
-    align-items: center;
-    padding: 0;
 }
 
 .navbar {
     padding: 0;
 }
 
-#search {
-    margin-left: 0.2rem;
-}
-
 .nav-link {
     color: white;
 }
 
+#carrito {
+    width: 30rem;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 1rem;
+}
+
+@media(min-width: 390px) {
+    #carrito {
+        margin-left: 9.5rem;
+    }
+}
+
+@media(min-width: 768px) {
+    #carrito {
+        margin-left: 47rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    #carrito {
+        margin-left: 112.7rem;
+    }
+}
+
+
 #dropdownMenuButton {
     background-color: black;
-    border-radius: 0;
-    padding: 0;
     border: none;
 }
 
-.navbar-nav {
-    margin: 0;
+.carrito-button {
+    cursor: pointer;
+}
+
+#user-button {
+    background-color: white;
+    border-radius: 10rem;
+    border: none;
+    padding: 0.3rem;
+}
+
+#home-button {
+    background-color: white;
+    border-radius: 10rem;
+    border: none;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+@media(min-width: 390px) {
+    #user-button {
+        margin-left: 0rem;
+    }
+    #home-button {
+        margin-left: 15.8rem;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .nav-item{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .dropdown-search {
+        margin-left: 0rem;
+    }
+
+    .dropdown-carrito{
+        margin-left: 2.5rem;
+    }
+
+    #user-button img{
+        width: 5.5rem;
+    }
+
+    #user-button{
+        margin-left: 2.5rem;
+    }
+
+    #home-button {
+        margin-left: 0rem;
+    }
+}
+
+@media(min-width:1440px) {
+
+    #home-button {
+        margin-left: 10rem;
+    }
+
+    #user-button {
+        margin-left: 0rem;
+    }
+
+    #user-button img{
+        width: 7rem;
+    }
+
+    .search-nav {
+        margin-left: 0rem;
+    }
+
+    .dropdown-carrito{
+        margin-left: 0rem;
+    }
+
+}
+
+.navbar {
+    border: 1px solid white;
 }
 
 .recomendados {
     background-color: #000000;
     margin: 0;
+    margin-top: 5rem;
     color: white;
 }
 
@@ -157,6 +258,7 @@ label {
     background-image: url("/img/minijack.webp");
     color: black;
     text-align: center;
+    margin: 0;
 }
 
 .card {
@@ -174,7 +276,7 @@ label {
     background-color: black;
     border-radius: 1rem;
     margin: 5rem;
-    color:white;
+    color: white;
 }
 
 #cards-container {
@@ -183,13 +285,20 @@ label {
     justify-content: space-around;
 }
 
+#novedades-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
 .card:hover {
     box-shadow: 0 0 10px 5px var(--menu);
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    transform: scale(1.25);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .slick-carousel-container {
@@ -197,41 +306,84 @@ label {
     /* Ancho máximo del carrusel */
 }
 
-.search-box {
-    padding: 10px;
-    border: none;
-    width: 30rem;
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-left: 0.2rem;
+#buscador {
+    width: 100%;
+    padding: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
 }
+
+#searchInput {
+    border: none;
+    background-color: white;
+    margin-left: 1.5rem;
+    width: 90%;
+    padding: 1rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.search-box:focus {
+    background-color: white;
+}
+
 
 .search {
     cursor: pointer;
 }
 
-.search-box:focus {
-    background-color: var(--menu);
-}
-
 .search-button {
     font-size: 1.5rem;
-    padding: 0.6rem;
-    width: 10rem;
-    border: solid white;
-}
-
-.search-button:hover {
-    background-color: white;
+    width: 12rem;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background-color: var(--menu);
     color: black;
 }
 
-.dropdown-menu {
-    width: 41rem;
-    padding: 0;
-    background-color: #000000;
+.search-button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid var(--menu);
+}
 
+@media(min-width: 390px) {
+    #searchInput {
+        width: 25rem;
+        margin: 0rem;
+    }
+
+    .search-button {
+        width: 10rem;
+        margin: 0rem;
+    }
+}
+
+@media(min-width: 768px) {
+    #searchInput {
+        width: 45rem;
+        margin: 0rem;
+    }
+
+    .search-button {
+        width: 10rem;
+        margin: 0rem;
+    }
+}
+
+@media(min-width:1440px) {
+    #searchInput {
+        width: 45rem;
+        margin: 0rem;
+    }
+
+    .search-button {
+        width: 10rem;
+        margin: 0rem;
+    }
 }
 
 .añadir-carrito {
@@ -243,16 +395,15 @@ label {
     transition: 'background-color 0.3s ease';
 }
 
-
-#tarjetas{
+#tarjetas {
     color: white;
 }
 
-.resultados{
+.resultados {
     color: var(--menu)
 }
 
-.tarjeta{
+.tarjeta {
     width: 20rem;
     margin-top: '2rem';
     margin-left: 10rem;
@@ -262,28 +413,36 @@ label {
     border-radius: 1rem;
 }
 
-.tarjeta-img-top{
+.tarjeta-img-top {
     width: 20rem;
 }
 
-.tarjeta-text{
+.tarjeta-text {
     font-size: 1rem;
 }
 
-.tarjeta-album{
+.tarjeta-album {
     font-size: 1rem;
     color: var(--menu)
 }
 
-.fila{
+.fila {
     margin: 2rem;
     margin-left: 2rem;
 }
 
-.tarjeta-body{
+.tarjeta-body {
     margin-top: 1.5rem;
 }
 
+.botonComprar {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
 
-
-
+.drop-vector {
+    width: 2.5rem;
+}
