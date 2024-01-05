@@ -1,23 +1,22 @@
 :root {
-    --body: #FFFDF4;
-    --claro: #ffffff;
     --menu: #f96530;
-    --oscuro: #344306;
+    --botonAñadir: #2f2f2f;
     --fondo: #000000;
-    --album: #5d5d5d;
-    --botonHover: #1C2206;
-    --textomenosimportante: #818181;
 }
 
 html {
     font-size: 62.5%;
+    margin: 0rem;
+    overflow-x: hidden;
 }
+
 
 body {
     font-family: 'Black Ops One';
     background-color: var(--fondo);
     font-size: 16px;
 }
+
 
 #cabecera {
     background-image: url("/img/cabecera.webp");
@@ -40,7 +39,7 @@ body {
 }
 
 .container-fluid {
-    padding: 0;
+    padding: 0rem;
 }
 
 .nav-item {
@@ -49,10 +48,16 @@ body {
 
 .navbar {
     padding: 0;
+    border: 1px solid white;
 }
 
 .nav-link {
     color: white;
+    font-size: 2.5rem;
+}
+
+.nav-link:hover {
+    color: var(--menu);
 }
 
 #carrito {
@@ -111,6 +116,7 @@ body {
     #user-button {
         margin-left: 0rem;
     }
+
     #home-button {
         margin-left: 15.8rem;
     }
@@ -118,7 +124,7 @@ body {
 
 @media(min-width: 768px) {
 
-    .nav-item{
+    .nav-item {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
@@ -127,50 +133,58 @@ body {
         margin-left: 0rem;
     }
 
-    .dropdown-carrito{
+    .dropdown-carrito {
         margin-left: 2.5rem;
     }
 
-    #user-button img{
+    #user-button img {
         width: 5.5rem;
     }
 
-    #user-button{
+    #user-button {
         margin-left: 2.5rem;
     }
 
     #home-button {
         margin-left: 0rem;
+    }
+
+    #home-button img {
+        width: 4.5rem;
     }
 }
 
 @media(min-width:1440px) {
 
     #home-button {
-        margin-left: 10rem;
+        margin-left: 5rem;
     }
 
     #user-button {
         margin-left: 0rem;
     }
 
-    #user-button img{
-        width: 7rem;
+    #user-button img {
+        width: 6rem;
     }
 
     .search-nav {
         margin-left: 0rem;
     }
 
-    .dropdown-carrito{
+    .dropdown-carrito {
         margin-left: 0rem;
     }
 
 }
 
-.navbar {
-    border: 1px solid white;
+.search-box {
+    max-width: 50rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 
 .recomendados {
     background-color: #000000;
@@ -211,8 +225,138 @@ h1 {
     margin-right: -10rem;
 }
 
-.carousel-inner {
-    justify-content: center;
+.card-carousel-top {
+    margin: 0.5rem;
+}
+
+.cardCarousel-title {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.cardCarousel-text {
+    color: var(--menu);
+    font-size: 2rem;
+}
+
+.cardCarousel-body {
+    margin-bottom: 0.5rem;
+}
+
+.carouselContainer {
+    margin: 5rem;
+    width: 100rem;
+}
+
+
+@media(min-width: 390px) {
+
+    #ofertas h1 {
+        margin-left: 8rem;
+    }
+
+    .carouselContainer {
+        margin: 1rem;
+        width: 100rem;
+    }
+
+    .card-carousel-top {
+        width: 30rem;
+        margin-left: 5.5rem;
+    }
+
+    .cardCarousel-title {
+        color: black;
+        font-size: 2rem;
+        margin-left: 0rem;
+    }
+
+    .cardCarousel-text {
+        color: var(--menu);
+        font-size: 2rem;
+        margin-left: 0rem;
+    }
+
+    .cardCarousel-body {
+        margin-bottom: 0.5rem;
+        margin-left: 2.5rem;
+    }
+
+}
+
+@media(min-width: 768px) {
+
+    .carouselContainer {
+        margin: 3.5rem;
+        width: 70rem;
+    }
+
+    .card-carousel-top {
+        width: 20rem;
+        margin-left: 2rem;
+    }
+
+    .cardCarousel-title {
+        color: black;
+        font-size: 2rem;
+        margin-right: 0rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .cardCarousel-text {
+        color: var(--menu);
+        font-size: 2rem;
+        margin-right: 0rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .cardCarousel-body {
+        margin-bottom: 0.5rem;
+        margin-left: 0rem;
+    }
+}
+
+@media(min-width: 1440px) {
+
+    .carouselContainer {
+        margin-left: 21rem;
+        width: 100rem;
+    }
+
+    .carousel-control-prev {
+        margin-left: -10rem;
+    }
+
+    .carousel-control-next {
+        margin-right: -10rem;
+    }
+
+    .card-carousel-top {
+        margin: 0.2rem;
+        width: 50rem;
+    }
+
+    .cardCarousel-title {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .cardCarousel-text {
+        color: var(--menu);
+        font-size: 2.5rem;
+    }
+
+    .cardCarousel-body {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.precio-con-descuento {
+    color: black;
 }
 
 #filtro {
@@ -262,10 +406,27 @@ label {
 }
 
 .card {
-    width: 18rem;
-    /* Ajusta el ancho de la tarjeta según tus necesidades */
-    margin-bottom: 20px;
-    /* Espaciado entre las tarjetas */
+    width: 25rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 8rem;
+}
+
+.card-img-top {
+    width: 25rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.cardCarousel {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cardCarousel-body {
+    color: white;
+    text-align: center;
 }
 
 .vinilo-card {
@@ -280,9 +441,8 @@ label {
 }
 
 #cards-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 5rem;
 }
 
 #novedades-container {
@@ -301,12 +461,8 @@ label {
     transform: scale(1.05);
 }
 
-.slick-carousel-container {
-    max-width: 90rem;
-    /* Ancho máximo del carrusel */
-}
 
-#buscador {
+#buscadorDespliega {
     width: 100%;
     padding: 0rem;
     margin-top: 1rem;
@@ -387,12 +543,17 @@ label {
 }
 
 .añadir-carrito {
-    padding: '1rem';
-    width: '5rem';
-    font-size: '1rem';
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.5rem;
     background-color: #c9613b;
-    border-radius: '10px';
-    transition: 'background-color 0.3s ease';
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.añadir-carrito:hover {
+    color: white;
+    background-color: var(--botonAñadir);
 }
 
 #tarjetas {
@@ -403,13 +564,17 @@ label {
     color: var(--menu)
 }
 
+#buscarButton {
+    cursor: pointer;
+}
+
 .tarjeta {
-    width: 20rem;
-    margin-top: '2rem';
+    width: 28rem;
+    margin-top: 2rem;
     margin-left: 10rem;
     background-color: white;
     color: black;
-    font-size: '1rem';
+    font-size: 1.5rem;
     border-radius: 1rem;
 }
 
@@ -418,12 +583,38 @@ label {
 }
 
 .tarjeta-text {
-    font-size: 1rem;
+    font-size: 2rem;
+    max-width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .tarjeta-album {
-    font-size: 1rem;
-    color: var(--menu)
+    font-size: 2rem;
+    color: var(--menu);
+    max-width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media(min-width: 390px) {
+    .tarjeta {
+        margin-left: 6rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .tarjeta {
+        margin-left: 7.5rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    .tarjeta {
+        margin-left: 6.3rem;
+    }
 }
 
 .fila {
@@ -445,4 +636,66 @@ label {
 
 .drop-vector {
     width: 2.5rem;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(45, 45, 45);
+    text-align: center;
+    padding: 1rem;
+}
+
+.registrarse-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#iniciarSesion {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--menu);
+    color: black;
+}
+
+#cuentaBoton {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--menu);
+    color: black;
+}
+
+#iniciarSesion:hover {
+    background-color: var(--botonHover);
+    color: white;
+}
+
+#cuentaBoton:hover {
+    background-color: var(--botonHover);
+    color: white;
+}
+
+
+.modal-content {
+    font-size: 1.5rem;
+}
+
+.form-control {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.registrarse-link {
+    text-decoration: underline;
+}
+
+#enviarContraseña {
+    background-color: var(--menu);
+    border-radius: 1rem;
 }
