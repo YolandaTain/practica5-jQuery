@@ -175,7 +175,6 @@ body {
     .dropdown-carrito {
         margin-left: 0rem;
     }
-
 }
 
 .search-box {
@@ -320,7 +319,7 @@ h1 {
     }
 }
 
-@media(min-width: 1440px) {
+@media(min-width: 1440px){
 
     .carouselContainer {
         margin-left: 21rem;
