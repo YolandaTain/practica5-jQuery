@@ -1,0 +1,24 @@
+@media(min-width: 390px) {
+    #carrito {
+        margin-left: 9.5rem;
+    }
+}
+
+@media(min-width: 768px) {
+    #carrito {
+        margin-left: 47rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    #carrito {
+        margin-left: 112.7rem;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0rem;
+    overflow-x: hidden;
+}
+
