@@ -8,15 +8,14 @@ html {
     font-size: 62.5%;
     margin: 0rem;
     overflow-x: hidden;
-}
 
+}
 
 body {
     font-family: 'Black Ops One';
     background-color: var(--fondo);
     font-size: 16px;
 }
-
 
 #cabecera {
     background-image: url("/img/cabecera.webp");
@@ -69,23 +68,7 @@ body {
     padding: 1rem;
 }
 
-@media(min-width: 390px) {
-    #carrito {
-        margin-left: 9.5rem;
-    }
-}
 
-@media(min-width: 768px) {
-    #carrito {
-        margin-left: 47rem;
-    }
-}
-
-@media(min-width: 1440px) {
-    #carrito {
-        margin-left: 112.7rem;
-    }
-}
 
 
 #dropdownMenuButton {
@@ -95,6 +78,7 @@ body {
 
 .carrito-button {
     cursor: pointer;
+
 }
 
 #user-button {
@@ -111,6 +95,29 @@ body {
     margin: 0.5rem;
     padding: 1rem;
 }
+
+.dropdown-carrito .dropdown-menu {
+    position: absolute !important;
+    margin: 0 !important;
+    transform: translate3d(-190px, 3.2727px, 0) !important;
+}
+
+@media(max-width:768px){
+    .dropdown-carrito .dropdown-menu {
+        position: absolute !important;
+        margin: 0 !important;
+        transform: translate3d(-205px, 3.2727px, 0) !important;
+    }
+}
+
+@media(max-width:390px){
+    .dropdown-carrito .dropdown-menu {
+        position: absolute !important;
+        margin: 0 !important;
+        transform: translate3d(-188px, 3.2727px, 0) !important;
+    }
+}
+
 
 @media(min-width: 390px) {
     #user-button {
@@ -387,6 +394,7 @@ label {
 .rotulo2 img {
     width: 2rem;
 }
+
 
 .rotulo2 {
     background-image: url("/img/minijack.webp");
