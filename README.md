@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Proyecto Proyecto Creación Web VinylRecord</h1>
+<h1 align="center" id="title">Proyecto Creación Web VinylRecord</h1>
 
 <p id="description">Crear una página principal atractiva que muestre productos destacados, promociones o elementos visuales llamativos para atraer a los usuarios.
 Realizar la funcionalidad de una página web usando como lenguaje <b>JQuery.</p>
