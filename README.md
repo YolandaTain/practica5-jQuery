@@ -17,8 +17,6 @@ Realizar la funcionalidad de una página web usando como lenguaje <b>JQuery.</p>
 
 <img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20140627.png" alt="project-screenshot" width="600" height="400/">
 
-<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20140627.png" alt="project-screenshot" width="600" height="400/">
-
 <img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20142612.png" alt="project-screenshot" width="600" height="400/">
 
 <img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144251.png" alt="project-screenshot" width="600" height="400/">
