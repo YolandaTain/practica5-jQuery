@@ -14,7 +14,6 @@ html {
 body {
     font-family: 'Black Ops One';
     background-color: var(--fondo);
-    font-size: 16px;
 }
 
 #cabecera {
@@ -41,6 +40,10 @@ body {
     padding: 0rem;
 }
 
+.agrupar {
+    padding: 1rem;
+}
+
 .nav-item {
     font-size: 2rem;
 }
@@ -63,13 +66,23 @@ body {
     width: 30rem;
     color: black;
     background-color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: italic;
     padding: 1rem;
 }
 
+@media(min-width: 390px) {
 
+    #carrito {
+        text-align: center;
+    }
+}
 
+.total-carrito {
+    font-size: 2rem;
+    font-style: normal;
+    text-align: center;
+}
 
 #dropdownMenuButton {
     background-color: black;
@@ -78,7 +91,6 @@ body {
 
 .carrito-button {
     cursor: pointer;
-
 }
 
 #user-button {
@@ -102,7 +114,7 @@ body {
     transform: translate3d(-190px, 3.2727px, 0) !important;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .dropdown-carrito .dropdown-menu {
         position: absolute !important;
         margin: 0 !important;
@@ -110,7 +122,7 @@ body {
     }
 }
 
-@media(max-width:390px){
+@media(max-width:390px) {
     .dropdown-carrito .dropdown-menu {
         position: absolute !important;
         margin: 0 !important;
@@ -192,17 +204,6 @@ body {
 }
 
 
-.recomendados {
-    background-color: #000000;
-    margin: 0;
-    margin-top: 5rem;
-    color: white;
-}
-
-.rotulo1 h1 {
-    font-size: 3.5rem;
-}
-
 h1 {
     color: white;
     padding: 2rem;
@@ -212,10 +213,26 @@ h1 {
     background-image: url(/img/text.avif);
 }
 
+#recomendados h1{
+    background-image: url(/img/text.avif);
+    color:black;
+    text-align: start;
+    font-size: 5rem;
+    padding: 3rem;
+    margin-left: 0rem;
+}
+
 .rotulo h1 {
     color: var(--fondo);
     font-size: 5rem;
-    text-align: left;
+    text-align: start;
+    margin-left: 10rem;
+}
+
+.rotulo h2 {
+    color: var(--fondo);
+    font-size: 3rem;
+    text-align: start;
     margin-left: 5rem;
 }
 
@@ -326,7 +343,7 @@ h1 {
     }
 }
 
-@media(min-width: 1440px){
+@media(min-width: 1440px) {
 
     .carouselContainer {
         margin-left: 21rem;
@@ -365,9 +382,6 @@ h1 {
     color: black;
 }
 
-#filtro {
-    margin-bottom: 20px;
-}
 
 #resultados {
     border: 1px solid #df1f1f;
@@ -395,9 +409,7 @@ label {
     width: 2rem;
 }
 
-
 .rotulo2 {
-    background-image: url("/img/minijack.webp");
     width: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -406,23 +418,52 @@ label {
 }
 
 .ofertas p {
-    background-image: url("/img/minijack.webp");
+    background-color: white;
     color: black;
     text-align: center;
     margin: 0;
 }
 
 .card {
-    width: 25rem;
+    width: 35rem;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 8rem;
+    font-size: 2rem;
+    margin: 1rem;
 }
 
 .card-img-top {
+    width: 40rem;
+    border-radius: 50px;
+    padding: 2.5rem;
+}
+
+.card-text {
+    font-size: 2.5rem;
+}
+
+.card-album {
+    color: var(--menu)
+}
+
+.tarjeta {
+    width: 25rem;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 8rem;
+    margin: 1rem;
+}
+
+.tarjetas {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.tarjeta-img-top {
     width: 25rem;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .cardCarousel {
@@ -450,13 +491,19 @@ label {
 #cards-container {
     justify-content: space-around;
     padding: 5rem;
+    margin-left: 0rem;
 }
 
 #novedades-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 5rem;
 }
+
+.item {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 
 
 .card:hover {
@@ -471,11 +518,10 @@ label {
 
 #buscadorDespliega {
     width: 100%;
-    padding: 0rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    background-color: black;
+    padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.8);
 }
+
 
 #searchInput {
     border: none;
@@ -563,65 +609,12 @@ label {
     background-color: var(--botonAñadir);
 }
 
-#tarjetas {
-    color: white;
-}
-
 .resultados {
     color: var(--menu)
 }
 
 #buscarButton {
     cursor: pointer;
-}
-
-.tarjeta {
-    width: 28rem;
-    margin-top: 2rem;
-    margin-left: 10rem;
-    background-color: white;
-    color: black;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-}
-
-.tarjeta-img-top {
-    width: 20rem;
-}
-
-.tarjeta-text {
-    font-size: 2rem;
-    max-width: 25rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.tarjeta-album {
-    font-size: 2rem;
-    color: var(--menu);
-    max-width: 25rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-@media(min-width: 390px) {
-    .tarjeta {
-        margin-left: 6rem;
-    }
-}
-
-@media(min-width: 768px) {
-    .tarjeta {
-        margin-left: 7.5rem;
-    }
-}
-
-@media(min-width: 1440px) {
-    .tarjeta {
-        margin-left: 6.3rem;
-    }
 }
 
 .fila {
@@ -634,6 +627,7 @@ label {
 }
 
 .botonComprar {
+    width: 100%;
     margin-top: 1rem;
     padding: 1rem;
     background-color: black;
@@ -641,8 +635,32 @@ label {
     font-size: 1.5rem;
 }
 
-.drop-vector {
-    width: 2.5rem;
+.viniloMiniatura {
+    width: 15rem;
+    height: 12rem;
+    margin-top: 1.5rem;
+}
+
+.botEliminar {
+    padding: 0.5rem;
+    width: 3rem;
+    margin-bottom: 2rem;
+}
+
+#cuenta {
+    padding: 1.5rem;
+    font-size: 2.5rem;
+}
+
+
+.cantidad {
+    font-size: 2rem;
+}
+
+.carritoVoid {
+    width: 7rem;
+    height: 6rem;
+    margin-left: 0.2rem;
 }
 
 #footer {
@@ -652,10 +670,132 @@ label {
     padding: 1rem;
 }
 
+#footer p{
+    margin: 0rem;
+    padding: 1rem;
+}
+
+.enlaceTienda{
+    text-decoration: none;
+    color: var(--menu);
+    font-size: 1.5rem;
+}
+
+.enlaceTienda:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px var(--menu);
+}
+
 .registrarse-link {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+.bienvenida{
+    text-align: center;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+@media(max-width:390px) {
+    .bienvenida {
+        font-size: 5rem;
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+    }
+
+    .rotuloSalon{
+        font-size: 4rem;
+    }
+
+    .parrafo p{
+        text-align: center;
+    }
+
+    #recomendados h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .bienvenida {
+        font-size: 8rem;
+        margin-top: 3rem;
+        margin-left: 5.5rem;
+    }
+
+    .imagenSalon{
+        margin-left: 5rem;
+    }
+
+    .rotuloSalon{
+        text-align: center;
+        margin-left: 5rem;
+    }
+
+    .parrafo{
+        margin-left: 5rem;
+        padding:0rem;
+    }
+
+    .rotuloSalon{
+        font-size: 5rem;
+    }
+
+    #recomendados h1{
+        font-size: 3.5rem;
+        text-align: start;
+    }
+
+    #bodyContenido{
+        margin: 2.5rem;
+    }
+}
+
+@media(min-width: 1440px) {
+    .bienvenida {
+        font-size: 10rem;
+        margin-top: 3rem;
+        margin-left: 5.5rem;
+    }
+
+    .imagenSalon{
+        width: 60rem;
+        margin-left: 5rem;
+        margin-top: 5rem;
+    }
+
+    #bodyContenido{
+        margin:0rem;
+    }
+
+    #contenido p{
+        margin-top: 2rem;
+    }
+}
+
+#contenido p{
+   text-align:justify;
+   color: white;
+   font-size: 2.5rem;
+   font-weight: 100;
+}
+
+#contenido{
+    margin:0rem;
+    padding: 0rem;
+}
+
+.rotuloSalon{
+    text-align: center;
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+
+.imagenSalon{
+    margin-top: 3rem;
 }
 
 #iniciarSesion {
@@ -664,6 +804,42 @@ label {
     font-size: 1.5rem;
     background-color: var(--menu);
     color: black;
+}
+
+.facebook:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.instagram:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.tiktok:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.youtube:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #cuentaBoton {
@@ -679,11 +855,27 @@ label {
     color: white;
 }
 
+.iconos img{
+    padding:2rem;
+}
+
 #cuentaBoton:hover {
     background-color: var(--botonHover);
     color: white;
 }
 
+.contenedorInfoCarrito {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin: 0;
+
+}
+
+.botonComprar {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
 
 .modal-content {
     font-size: 1.5rem;
@@ -705,4 +897,47 @@ label {
 #enviarContraseña {
     background-color: var(--menu);
     border-radius: 1rem;
+}
+
+#filtro {
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+}
+
+#categoriaButton {
+    font-size: 2rem;
+    width: 50rem;
+    background-color: var(--menu);
+    color: black;
+    border-radius: 10px;
+}
+
+#categoriaButton:hover {
+    background-color: var(--botonAñadir);
+    color: white;
+}
+
+.dropdown-item {
+    font-size: 2rem;
+}
+
+@media(max-width:390px) {
+
+    #categoriaButton {
+        font-size: 2rem;
+        width: 33rem;
+        background-color: var(--menu);
+        color: black;
+        border-radius: 10px;
+    }
+
+    #categoriaButton:hover {
+        background-color: var(--botonAñadir);
+        color: white;
+    }
+
+    .dropdown-item {
+        width: 20rem;
+        font-size: 2rem;
+    }
 }

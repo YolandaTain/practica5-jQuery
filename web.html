@@ -1,578 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VinylRecord</title>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/web.css">
-        <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/js/web.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
-            rel="stylesheet">
-        <!-- Slick Carousel CSS y JS -->
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinylRecord</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/web.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/web.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
 
-    </head>
+    <!-- Slick Carousel CSS y JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <body>
-        <div class="container-fluid">
-            <header id="cabecera" class="row justify-content-center">
-                <div class="col-12 col-md-6 header-container logocentro">
-                    <div class="row justify-content-center">
-                        <div class="col-12 circulo">
-                            <a class="navbar-brand" href="#">
-                                <img src="/img/logo.png" alt="Logo"
-                                    class="logo col-12">
-                            </a>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header id="cabecera" class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-12 col-lg-12 header-container logocentro">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 circulo">
+                        <div class="navbar-brand">
+                            <img src="/img/logo.png" alt="Logo" class="logo col-12">
                         </div>
                     </div>
                 </div>
-            </header>
-            <div class="row ofertas">
-                <p class="col-12" id="cuenta"></p>
             </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex flex-row justify-content-center iconos">
+                <!-- Icono de Facebook -->
+                <i class="facebook">
+                    <img src="/img/face.png" alt="Logo" class="img-fluid">
+                </i>
+                <!-- Icono de Instagram -->
+                <i class="instagram">
+                    <img src="/img/inst.png" alt="Logo" class="img-fluid">
+                </i>
+                <!-- Icono de TikTok -->
+                <i class="tiktok">
+                    <img src="/img/tik.png" alt="Logo" class="img-fluid">
+                </i>
+                <!-- Icono de YouTube -->
+                <i class="youtube">
+                    <img src="/img/you.png" alt="Logo" class="img-fluid">
+                </i>
+            </div>
+        </header>
+    </div>
 
-            <nav
-                class="row navbar navbar-expand-md navbar-expand-lg navbar-dark bg-dark"
-                id="principal">
 
-                <div class="col-1 col-md-1 col-lg-1">
-                    <button id="home-button" type="button"
-                        aria-expanded="false">
-                        <span class="img-home">
-                            <img src="/img/casa.png" alt="home" width="53rem">
-                        </span>
-                    </button>
+    <div class="row ofertas justify-content-center">
+        <p class="col-12 align-content-center" id="cuenta"></p>
+    </div>
+
+    <nav class="row navbar navbar-expand-md navbar-expand-lg navbar-dark bg-dark" id="principal">
+
+        <div class="col-1 col-md-1 col-lg-1">
+            <button id="home-button" type="button" aria-expanded="false">
+                <span class="img-home">
+                    <img src="/img/casa.png" alt="home" width="53rem">
+                </span>
+            </button>
+        </div>
+        <ul class="col-12 col-md-7 col-lg-8 justify-content-around align-items-center navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" id="tienda-link" href="#">Tienda
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="ofertas-link" href="#">Ofertas
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="novedades-link" href="#">Novedades
+                </a>
+            </li>
+        </ul>
+
+        <div class="col-4 col-md-1 col-lg-1 dropdown-search text-start" id="buscador">
+            <!-- Botón de BUSCAR -->
+            <button id="dropdownMenuButton" class="search-nav btn btn-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                <span class="img-search">
+                    <img src="/img/search.png" alt="Logo" class="search">
+                </span>
+            </button>
+            <!-- Desplegable de BUSCAR -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="buscadorDespliega">
+                <div class="row agrupar justify-content-center">
+                    <input type="search" class="col-7 search-box align-self-center"
+                        placeholder="Introduce un artista o álbum..." id="searchInput">
+                    <button type="button" class="col-5 btn-dark search-button" id="buscarButton" type="button"
+                        data-bs-toggle="dropdown">BUSCAR</button>
                 </div>
-                <ul
-                    class="col-12 col-md-7 col-lg-8 justify-content-around align-items-center navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" id="tienda-link" href="#">Tienda
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="ofertas-link" href="#">Ofertas
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="novedades-link"
-                            href="#">Novedades
-                        </a>
-                    </li>
-                </ul>
+                <div class="row tarjetas justify-content-center">
+                </div>
+            </div>
+        </div>
 
-                <div class="col-4 col-md-1 col-lg-1 dropdown-search text-start"
-                    id="buscador">
-                    <!-- Botón de BUSCAR -->
-                    <button id="dropdownMenuButton"
-                        class="search-nav btn btn-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown" data-bs-auto-close="false">
-                        <span class="img-search">
-                            <img src="/img/search.png" alt="Logo"
-                                class="search">
-                        </span>
-                    </button>
-                    <!-- Desplegable de BUSCAR -->
-                    <div class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton"
-                        id="buscadorDespliega">
-                        <div class="row agrupar justify-content-center">
-                            <input type="search"
-                                class="col-7 search-box align-self-center"
-                                placeholder="Introduce un artista o álbum..."
-                                id="searchInput">
-                            <button type="button"
-                                class="col-5 btn-dark search-button"
-                                id="buscarButton" dropdown-toggle"
-                                type="button" data-bs-toggle="dropdown"
-                                data-bs-auto-close="false">BUSCAR</button>
-                        </div>
-                        <div class="row tarjetas justify-content-center">
-                        </div>
+
+
+        <div class="col-4 col-md-1 col-lg-1 text-center">
+            <button id="user-button" type="button" aria-expanded="false" data-bs-toggle="modal"
+                data-bs-target="#miCuentaModal">
+                <span class="img-user">
+                    <img src="/img/usuario.png" alt="user">
+                </span>
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="miCuentaModal" tabindex="-1" aria-labelledby="miCuentaModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="miCuentaModalLabel">Mi cuenta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-
-                <div class="col-4 col-md-1 col-lg-1 text-center">
-                    <button id="user-button" type="button" aria-expanded="false"
-                        data-bs-toggle="modal"
-                        data-bs-target="#miCuentaModal">
-                        <span class="img-user">
-                            <img src="/img/usuario.png" alt="user">
-                        </span>
-                    </button>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal fade" id="miCuentaModal" tabindex="-1"
-                    aria-labelledby="miCuentaModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="miCuentaModalLabel">Mi cuenta</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                    <div class="modal-body">
+                        <!-- Contenido del formulario -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-12 text-center">
+                                    <form>
+                                        <div class="col-12 col-md-12 col-lg-12 text-start">
+                                            <label for="email" class="form-label">Dirección
+                                                de email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="email@ejemplo.com">
+                                        </div>
+                                        <div class="mb-3 text-start">
+                                            <label for="password" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Contraseña">
+                                        </div>
+                                        <div class="mb-3 form-check text-start">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">Recuérdame</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-dark" id="iniciarSesion">Iniciar
+                                            sesión</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <!-- Contenido del formulario -->
-                                <div class="container">
-                                    <div class="row">
-                                        <div
-                                            class="col-12 col-md-12 col-lg-12 text-center">
-                                            <form>
-                                                <div class="mb-3 text-start">
-                                                    <label for="email"
-                                                        class="form-label">Dirección
-                                                        de email</label>
-                                                    <input type="email"
-                                                        class="form-control"
-                                                        id="email"
-                                                        placeholder="email@ejemplo.com">
-                                                </div>
-                                                <div class="mb-3 text-start">
-                                                    <label for="password"
-                                                        class="form-label">Contraseña</label>
-                                                    <input type="password"
-                                                        class="form-control"
-                                                        id="password"
-                                                        placeholder="Contraseña">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check text-start">
-                                                    <input type="checkbox"
-                                                        class="form-check-input"
-                                                        id="rememberMe">
-                                                    <label
-                                                        class="form-check-label"
-                                                        for="rememberMe">Recuérdame</label>
-                                                </div>
-                                                <button type="submit"
-                                                    class="btn btn-dark"
-                                                    id="iniciarSesion">Iniciar
-                                                    sesión</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-md-12 text-center">
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#" class="registrarse-link"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#registroModal">Crear
-                                                Cuenta</a>
-                                            <a id="olvidoContrasenaLink"
-                                                class="dropdown-item" href="#"
-                                                style="color: black;">¿Olvidaste
-                                                tu contraseña?</a>
-                                        </div>
-                                    </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-12 col-lg-12 text-center">
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="registrarse-link" data-bs-toggle="modal"
+                                        data-bs-target="#registroModal">Crear
+                                        Cuenta</a>
+                                    <a id="olvidoContrasenaLink" class="dropdown-item" href="#"
+                                        style="color: black;">¿Olvidaste
+                                        tu contraseña?</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Modal de registro -->
-                <div class="modal fade" id="registroModal" tabindex="-1"
-                    aria-labelledby="registroModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="registroModalLabel">Registrarse</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Contenido del formulario de registro -->
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="nombre"
-                                            class="form-label">Nombre</label>
-                                        <input type="text" class="form-control"
-                                            id="nombre" placeholder="Nombre">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="apellido"
-                                            class="form-label">Apellido</label>
-                                        <input type="text" class="form-control"
-                                            id="apellido"
-                                            placeholder="Apellido">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="correo"
-                                            class="form-label">Correo
-                                            electrónico</label>
-                                        <input type="email" class="form-control"
-                                            id="correo"
-                                            placeholder="Correo electrónico">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="contrasena"
-                                            class="form-label">Contraseña</label>
-                                        <input type="password"
-                                            class="form-control" id="contrasena"
-                                            placeholder="Contraseña">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="confirmarContrasena"
-                                            class="form-label">Confirmar
-                                            Contraseña</label>
-                                        <input type="password"
-                                            class="form-control"
-                                            id="confirmarContrasena"
-                                            placeholder="Confirmar Contraseña">
-                                    </div>
-                                    <button type="submit" id="cuentaBoton"
-                                        class="col-md-12 text-center">Crear
-                                        cuenta</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal de Contraseña Inválida -->
-                <div class="modal fade" id="contrasenaInvalidaModal"
-                    tabindex="-1"
-                    aria-labelledby="contrasenaInvalidaModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="contrasenaInvalidaModalLabel">Contraseña
-                                    Inválida</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>La contraseña debe contener al menos un
-                                    carácter especial.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal de error -->
-                <div class="modal fade" id="errorModal" tabindex="-1"
-                    aria-labelledby="errorModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="errorModalLabel">Error</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Ha ocurrido un error. Por favor, verifica tus
-                                datos.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal de Cuenta Creada -->
-                <div class="modal fade" id="cuentaCreadaModal" tabindex="-1"
-                    aria-labelledby="cuentaCreadaModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="cuentaCreadaModalLabel">Cuenta
-                                    Creada</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Tu cuenta ha sido creada exitosamente.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal de Restablecimiento de Contraseña -->
-                <div class="modal fade" id="restablecerContrasenaModal"
-                    tabindex="-1"
-                    aria-labelledby="restablecerContrasenaModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="restablecerContrasenaModalLabel">Restablecer
-                                    tu contraseña</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Te enviaremos un correo electrónico para
-                                    restablecer tu contraseña.</p>
-                                <form id="restablecerContrasenaForm">
-                                    <div class="mb-3">
-                                        <label for="correoRestablecimiento"
-                                            class="form-label">Correo
-                                            electrónico</label>
-                                        <input type="email" class="form-control"
-                                            id="correoRestablecimiento"
-                                            placeholder="Correo electrónico"
-                                            required>
-                                    </div>
-                                    <button type="submit"
-                                        id="enviarContraseña">Enviar</button>
-                                    <button type="button"
-                                        class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 col-md-1 col-lg-1 dropdown dropdown-carrito">
-                    <button id="dropdownMenuButton"
-                        class=" carrito-button btn btn-secondary dropdown-toggle"
-                        type="button" data-bs-toggle="dropdown"
-                        data-bs-auto-close="outside" aria-expanded="false">
-                        <span class="img-carrito">
-                            <img src="/img/carrito.png" alt="Logo">
-                        </span> 
-                    </button>
-                    <ul class="dropdown-menu row" aria-labelledby="dropdownMenuButton" id="carrito">
-                        
-                    </ul>
-                </div>
-
-                <!-- Modal de Datos de Envío -->
-                <div class="modal fade" id="modalDatosEnvio" tabindex="-1"
-                    aria-labelledby="modalDatosEnvioLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title"
-                                    id="modalDatosEnvioLabel">Datos de
-                                    Envío</h5>
-                                <button type="button" class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <!-- Formulario para los datos de envío -->
-                                <form id="formularioDatosEnvio">
-                                    <div class="mb-3">
-                                        <label for="pais"
-                                            class="form-label">País</label>
-                                        <select class="form-select" id="pais"
-                                            name="pais">
-                                            <!-- Opciones de países, puedes agregar más según tus necesidades -->
-                                            <option
-                                                value="espana">España</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="nombre"
-                                            class="form-label">Nombre</label>
-                                        <input type="text" class="form-control"
-                                            id="nombre" name="nombre">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="apellido"
-                                            class="form-label">Apellido</label>
-                                        <input type="text" class="form-control"
-                                            id="apellido" name="apellido">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="dni"
-                                            class="form-label">DNI</label>
-                                        <input type="text" class="form-control"
-                                            id="dni" name="dni">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="direccion"
-                                            class="form-label">Dirección</label>
-                                        <input type="text" class="form-control"
-                                            id="direccion" name="direccion">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="cp"
-                                            class="form-label">Código
-                                            Postal</label>
-                                        <input type="text" class="form-control"
-                                            id="cp" name="cp">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="ciudad"
-                                            class="form-label">Ciudad</label>
-                                        <input type="text" class="form-control"
-                                            id="ciudad" name="ciudad">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="provincia"
-                                            class="form-label">Provincia</label>
-                                        <input type="text" class="form-control"
-                                            id="provincia" name="provincia">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="telefono"
-                                            class="form-label">Teléfono</label>
-                                        <input type="tel" class="form-control"
-                                            id="telefono" name="telefono">
-                                    </div>
-                                    <button type="button" class="btn btn-dark"
-                                        onclick="realizarPago()">Pagar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- Modal de Producto No Disponible -->
-            <div class="modal fade" id="productoNoDisponibleModal" tabindex="-1"
-                aria-labelledby="productoNoDisponibleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title"
-                                id="productoNoDisponibleModalLabel">Producto No
-                                Disponible</h5>
-                            <button type="button" class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lo sentimos, este producto no está disponible en
-                                este momento o no.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"
-                                data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-            <br><br>
-
-            <div class="recomendados row" id="recomendados">
-                <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
-                    <h1>Discos Recomendados</h1>
-                    <img src="/img/star.png" alt="Logo">
-                    <img src="/img/star.png" alt="Logo">
-                    <img src="/img/star.png" alt="Logo">
-                </div>
-                <br><br><br><br>
-
-                <div id="cards-container" class="container mt-4"></div>
-            </div>
-
-            <div class="row" id="tienda">
-                <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
-                    <h1>Tienda</h1>
-                </div>
-                <div class="seccionTienda">
-                    <div id="filtro" class="col-12 text-start">
-                        <label for="categoria">Filtrar por categoría:</label>
-                        <select id="categoria">
-                            <option value="todas">Selecciona
-                                categoría...</option>
-                            <option value="Rock">Rock</option>
-                            <option value="Jazz">Jazz</option>
-                            <option value="Pop">Pop</option>
-                            <option value="Reggae">Reggae</option>
-                            <option value="Hip-Hop">Hip-Hop</option>
-                        </select>
-                    </div>
-
-                    <div id="resultadosFiltro" class="col-12">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" id="ofertas">
-                <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
-                    <h1>Ofertas</h1>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6 align-self-center">
-                            <div id="slick-carousel"
-                                class="slick-carousel-container">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="recomendados row" id="novedades">
-                <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
-                    <h1>NOVEDADES</h1>
-                    <img src="/img/star.png" alt="Logo">
-                    <img src="/img/star.png" alt="Logo">
-                    <img src="/img/star.png" alt="Logo">
-                </div>
-                <div id="novedades-container" class="container mt-4"></div>
-            </div>
-
-            <footer id="footer" class="row">
-                <p class="col-12 col-md-12 col-lg-12 align-self-center">
-                    <p>VinylRecord <svg fill="#FFFDF4" height="15px"
-                            version="1.1" id="Capa_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 367.467 367.467" xml:space="preserve">
-
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
-                                stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g>
-                                    <path
-                                        d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z">
-                                    </path>
-                                    <path
-                                        d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z">
-                                    </path>
-                                </g>
-                            </g>
-                        </svg> Todos los derechos reservados
-                    </p>
-                </p>
-            </footer>
         </div>
 
-    </body>
+        <!-- Modal de registro -->
+        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registroModalLabel">Registrarse</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del formulario de registro -->
+                        <form>
+                            <div class="col-12 col-md-12 col-lg-12 mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12 mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo
+                                    electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="Correo electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contrasena" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmarContrasena" class="form-label">Confirmar
+                                    Contraseña</label>
+                                <input type="password" class="form-control" id="confirmarContrasena"
+                                    placeholder="Confirmar Contraseña">
+                            </div>
+                            <button type="submit" id="cuentaBoton" class="col-md-12 text-center">Crear
+                                cuenta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de Contraseña Inválida -->
+        <div class="modal fade" id="contrasenaInvalidaModal" tabindex="-1"
+            aria-labelledby="contrasenaInvalidaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contrasenaInvalidaModalLabel">Contraseña
+                            Inválida</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>La contraseña debe contener al menos un
+                            carácter especial.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal de error -->
+        <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Ha ocurrido un error. Por favor, verifica tus
+                        datos.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Cuenta Creada -->
+        <div class="modal fade" id="cuentaCreadaModal" tabindex="-1" aria-labelledby="cuentaCreadaModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cuentaCreadaModalLabel">Cuenta
+                            Creada</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tu cuenta ha sido creada exitosamente.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de Restablecimiento de Contraseña -->
+        <div class="modal fade" id="restablecerContrasenaModal" tabindex="-1"
+            aria-labelledby="restablecerContrasenaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="restablecerContrasenaModalLabel">Restablecer
+                            tu contraseña</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Te enviaremos un correo electrónico para
+                            restablecer tu contraseña.</p>
+                        <form id="restablecerContrasenaForm">
+                            <div class="col-12 col-md-12 col-lg-12 mb-3">
+                                <label for="correoRestablecimiento" class="form-label">Correo
+                                    electrónico</label>
+                                <input type="email" class="form-control" id="correoRestablecimiento"
+                                    placeholder="Correo electrónico" required>
+                            </div>
+                            <button type="submit" id="enviarContraseña">Enviar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 col-md-1 col-lg-1 dropdown dropdown-carrito text-end">
+            <button id="dropdownMenuButton" class=" carrito-button btn btn-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                <span class="img-carrito">
+                    <img src="/img/carrito.png" alt="Logo">
+                </span>
+            </button>
+            <ul class="dropdown-menu row" aria-labelledby="dropdownMenuButton" id="carrito">
+            </ul>
+        </div>
+
+        <!-- Modal de Datos de Envío -->
+        <div class="modal fade" id="modalDatosEnvio" tabindex="-1" aria-labelledby="modalDatosEnvioLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDatosEnvioLabel">Datos de
+                            Envío</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Formulario para los datos de envío -->
+                        <form id="formularioDatosEnvio">
+                            <div class="mb-3">
+                                <label for="pais" class="form-label">País</label>
+                                <select class="form-select" id="pais" name="pais">
+                                    <!-- Opciones de países, puedes agregar más según tus necesidades -->
+                                    <option value="espana">España</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dni" class="form-label">DNI</label>
+                                <input type="text" class="form-control" id="dni" name="dni">
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="direccion" name="direccion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cp" class="form-label">Código
+                                    Postal</label>
+                                <input type="text" class="form-control" id="cp" name="cp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" name="ciudad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="provincia" class="form-label">Provincia</label>
+                                <input type="text" class="form-control" id="provincia" name="provincia">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono">
+                            </div>
+                            <button type="button" class="btn btn-dark" onclick="realizarPago()">Pagar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contenido" class="container row justify-content-center">
+        <h1 class="bienvenida col-12 col-md-12 col-lg-12"><strong>¡COMIENZA TU COLECCIÓN DE
+                VINILOS!</strong></h1>
+
+        <div class="container row justify-content-center" id="bodyContenido">
+            <div class="col-12 col-md-12 col-lg-12 imagenSalon">
+                <img src="/img/SALON.jpg" alt="Salón" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <h1 class="rotuloSalon">Bienvenido a nuestro Salón</h1>
+                <p class="parrafo">En nuestro acogedor salón, te ofrecemos un espacio único para disfrutar de la música
+                    y explorar
+                    nuestra
+                    colección de vinilos. Siéntate, relájate y sumérgete en la auténtica experiencia vinílica.</p>
+
+                <p class="parrafo">En <strong>VinylRecord</strong>, apasionados por el sonido vinílico, te ofrecemos una
+                    cuidada
+                    selección de
+                    los
+                    mejores álbumes y artistas. Desde clásicos atemporales hasta las últimas novedades, explorarás
+                    géneros que
+                    se
+                    adaptan a todos los gustos.</p>
+            </div>
+            <p class="parrafo">Ofrecemos vinilos de alta calidad y creamos un espacio donde los amantes de la música se
+                conectan
+                y descubren
+                tesoros sonoros. Comprometidos con la excelencia, reflejamos nuestro cuidado en la presentación
+                de productos
+                y
+                servicio personalizado.</p>
+
+            <p class="parrafo2 text-center">¡Siente la diferencia con
+                <strong><svg fill="#FFFDF4" height="25px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.467 367.467" xml:space="preserve">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z">
+                                </path>
+                                <path
+                                    d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z">
+                                </path>
+                            </g>
+                        </g>
+
+                    </svg>VinylRecord</strong>!
+            </p>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Modal de Producto No Disponible -->
+    <div class="modal fade" id="productoNoDisponibleModal" tabindex="-1"
+        aria-labelledby="productoNoDisponibleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productoNoDisponibleModalLabel">Producto No
+                        Disponible</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lo sentimos, este producto no está disponible en
+                        este momento o no.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="recomendados row" id="recomendados">
+        <div class="rotulo1 col-12 col-md-12 col-lg-12 text-center">
+            <h1>RECOMENDADOS</h1>
+        </div>
+        <br><br><br><br>
+
+        <div id="cards-container" class="container mt-4"></div>
+    </div>
+
+
+    <div class="row" id="tienda">
+        <div class="rotulo col-12 col-md-12 col-lg-12">
+            <h1>Tienda</h1>
+        </div>
+        <div class="seccionTienda row">
+            <div id="filtro" class="col-12 col-md-12 col-lg-12">
+                <label for="categoriaButton">Filtrar por categoría:</label>
+                <div class="dropdown" id="categoria">
+                    <button class="btn btn-secondary" type="button" id="categoriaButton" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Selecciona categoría...
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoriaButton" id="categoriasLista">
+                        <li><a class="dropdown-item" href="#" data-value="todas">Todas</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Rock">Rock</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Jazz">Jazz</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Pop">Pop</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Reggae">Reggae</a></li>
+                        <li><a class="dropdown-item" href="#" data-value="Hip-Hop">Hip-Hop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="resultadosFiltro">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="ofertas">
+        <div class="rotulo col-12 col-md-12 col-lg-12">
+            <h1>Ofertas</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 align-self-center">
+                    <div id="slick-carousel" class="slick-carousel-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recomendados row" id="novedades">
+        <div class="rotulo col-12 col-md-12 col-lg-12 text-center">
+            <h1>NOVEDADES</h1>
+            <h2> Recién llegados a la tienda</h2>
+        </div>
+        <div id="novedades-container" class="container mt-4"></div>
+    </div>
+
+    <footer id="footer" class="row">
+
+        <div class="col-4 col-md-4 col-lg-4 align-self-center estamos">
+            <!-- Enlace DONDE ESTAMOS -->
+            <a href="#" data-toggle="modal" class="enlaceTienda" data-target="#dondeEstamosModal">DONDE ESTAMOS</a>
+        </div>
+        <p class="col-4 col-md-4 col-lg-4 align-self-center">
+            VinylRecord
+            <svg fill="#FFFDF4" height="10px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 367.467 367.467" xml:space="preserve">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g>
+                        <path
+                            d="M183.73,0.018C82.427,0.018,0,82.404,0,183.733c0,101.289,82.427,183.716,183.73,183.716 c101.315,0,183.737-82.427,183.737-183.716C367.467,82.404,285.045,0.018,183.73,0.018z M183.73,326.518 c-78.743,0-142.798-64.052-142.798-142.784c0-78.766,64.055-142.817,142.798-142.817c78.752,0,142.807,64.052,142.807,142.817 C326.536,262.466,262.481,326.518,183.73,326.518z">
+                        </path>
+                        <path
+                            d="M244.036,217.014c-11.737,20.141-33.562,32.635-56.956,32.635c-36.329,0-65.921-29.585-65.921-65.915 c0-36.36,29.592-65.955,65.921-65.955c23.395,0,45.219,12.54,56.956,32.641l1.517,2.627h44.28l-2.658-7.129 c-7.705-20.413-21.225-37.769-39.122-50.157c-17.942-12.42-39.017-19.009-60.973-19.009c-58.981,0-106.946,48.006-106.946,106.982 c0,58.98,47.965,106.941,106.946,106.941c21.956,0,43.03-6.567,60.973-19.006c17.897-12.391,31.417-29.741,39.122-50.154 l2.658-7.133h-44.28L244.036,217.014z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+            Todos los derechos reservados
+        </p>
+
+        <div class="col-4 col-md-4 col-lg-4 align-self-center">
+            <!-- Enlace CONTACTA -->
+            <a href="#" class="enlaceTienda" id="enlaceContacta" data-toggle="modal" data-target="#contactaModal">CONTACTA</a>
+        </div>
+    </footer>
+
+    <!-- Modal DONDE ESTAMOS -->
+    <div class="modal fade" id="dondeEstamosModal" tabindex="-1" role="dialog" aria-labelledby="dondeEstamosModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="dondeEstamosModalLabel">DONDE ESTAMOS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26480.766373697917!2d-3.7037886343965554!3d40.41677560789699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422864d5b3b257%3A0x494dd63a8e15192e!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1sen!2ses!4v1660236943985!5m2!1sen!2ses"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p class="text-center">¡VinylRecord te espera! ¡Ven a visitarnos y descubre nuestra increíble
+                        colección de vinilos!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal CONTACTA -->
+        <div class="modal fade" id="contactaModal" tabindex="-1" role="dialog" aria-labelledby="contactaModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactaModalLabel">CONTACTA</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Formulario de contacto -->
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="tipoConsulta">Tipo de consulta</label>
+                                <select class="form-control" id="tipoConsulta" name="tipoConsulta">
+                                    <option value="consultaPedido">Consulta sobre el pedido</option>
+                                    <option value="consultaProducto">Consulta sobre un producto</option>
+                                    <option value="otraConsulta">Otra consulta</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="numPedido">Nº de Pedido</label>
+                                    <input type="text" class="form-control" id="numPedido" name="numPedido">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" name="asunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="consulta">Consulta</label>
+                                <textarea class="form-control" id="consulta" name="consulta" rows="4"
+                                    required></textarea>
+                            </div>
+                            <button type="button" class="btn btn-dark enviarConsulta">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
 
 </html>
