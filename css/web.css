@@ -278,6 +278,10 @@ h1 {
         margin-left: 8rem;
     }
 
+    .rotulo h1{
+        margin: 0;
+    }
+
     .carouselContainer {
         margin: 1rem;
         width: 100rem;
