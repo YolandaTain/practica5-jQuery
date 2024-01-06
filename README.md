@@ -7,22 +7,38 @@ Realizar la funcionalidad de una página web usando como lenguaje <b>JQuery.</p>
 
 <h2>🚀 Demo</h2>
 
-[https://github.com/YolandaTain/practica5-jQuery.git](https://jorgemarimon.github.io/CLIENTE_TEMA_5/ )
+[https://github.com/YolandaTain/practica5-jQuery.git](https://yolandatain.github.io/practica5-jQuery/ )
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://github.com/JorgeMarimon/CLIENTE_TEMA_5/blob/main/requisitos%20practica/Captura%20de%20pantalla%202024-01-05%20013224.png" alt="project-screenshot" width="600" height="400/">
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-05%20200208.png" alt="project-screenshot" width="600" height="400/">
 
-<img src="https://github.com/JorgeMarimon/CLIENTE_TEMA_5/blob/main/requisitos%20practica/Captura%20de%20pantalla%202024-01-05%20013250.png" alt="project-screenshot" width="600" height="400/">
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20010350.png" alt="project-screenshot" width="600" height="400/">
 
-<img src="https://github.com/JorgeMarimon/CLIENTE_TEMA_5/blob/main/requisitos%20practica/Captura%20de%20pantalla%202024-01-05%20013435.png" alt="project-screenshot" width="600" height="400/">
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20140627.png" alt="project-screenshot" width="600" height="400/">
 
-<img src="https://github.com/JorgeMarimon/CLIENTE_TEMA_5/blob/main/requisitos%20practica/Captura%20de%20pantalla%202024-01-05%20013625.png" alt="project-screenshot" width="600" height="400/">
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20140627.png" alt="project-screenshot" width="600" height="400/">
 
-<img src="https://github.com/JorgeMarimon/CLIENTE_TEMA_5/blob/main/requisitos%20practica/Captura%20de%20pantalla%202024-01-05%20013739.png" alt="project-screenshot" width="600" height="400/">
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20142612.png" alt="project-screenshot" width="600" height="400/">
 
-  
-  
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144251.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144318.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144329.png.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144507.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144532.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144544.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144607.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144620.png" alt="project-screenshot" width="600" height="400/">
+
+<img src="https://github.com/YolandaTain/practica5-jQuery/blob/main/screenshots/Captura%20de%20pantalla%202024-01-06%20144632.png" alt="project-screenshot" width="600" height="400/">
+
 <h2>🧐 Requisitos</h2>
 
 Aquí se muestras algunas de las principales características de la web:
