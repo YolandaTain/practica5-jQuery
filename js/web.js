@@ -566,6 +566,7 @@ var botonComprar = $("<button>").addClass("botonComprar").text("COMPRAR")
 
 botonComprar.on('click', function () {
     // Abre el modal de Datos de Envío
+    console.log("comprar")
     $('#modalDatosEnvio').modal('show');
 });
 
@@ -578,10 +579,7 @@ function realizarPago() {
     alert('¡Compra realizada con éxito!');
 }
 
-// Añadir modal en el botón Comprar
-botonComprar.on('click', function () {
-    showComprarModal();
-});
+
 
 
 function añadir(viniloIndex, menuCarrito) {
